@@ -1,4 +1,4 @@
-" https://qiita.com/morikooooo/items/9fd41bcd8d1ce9170301
+" ref: https://qiita.com/morikooooo/items/9fd41bcd8d1ce9170301
 
 " setting
 "文字コードをUFT-8に設定
@@ -13,7 +13,6 @@ set autoread
 set hidden
 " 入力中のコマンドをステータスに表示する
 set showcmd
-
 
 " 見た目系
 " 行番号を表示
@@ -40,17 +39,15 @@ nnoremap k gk
 " シンタックスハイライトの有効化
 syntax enable
 
-
 " Tab系
 " 不可視文字を可視化(タブが「▸-」と表示される)
 set list listchars=tab:\▸\-
 " Tab文字を半角スペースにする
-set expandtab
+"set expandtab
 " 行頭以外のTab文字の表示幅（スペースいくつ分）
 set tabstop=2
 " 行頭でのTab文字の表示幅
-set shiftwidth=2
-
+set shiftwidth=4
 
 " 検索系
 " 検索文字列が小文字の場合は大文字小文字を区別なく検索する
@@ -65,3 +62,10 @@ set wrapscan
 set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+colorscheme iceberg
+
+" ref: https://www.youtube.com/watch?v=2jJSNe4cHUM&t=270s
+inoremap <silent> jj <ESC>
+nnoremap K 10k
+nnoremap J 10j

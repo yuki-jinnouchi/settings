@@ -52,4 +52,10 @@ setopt magic_equal_subst
 unsetopt extended_history
 
 # set aliases
-source "${ZDOTDIR}/settings/alias.sh"
+source "${ZDOTDIR:-$HOME}/settings/alias.sh"
+
+# set aliases
+source "${ZDOTDIR:-$HOME}/settings/history.sh"
+
+export EDITOR=vim
+setopt auto_param_keys

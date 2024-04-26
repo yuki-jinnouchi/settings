@@ -11,7 +11,7 @@ using namespace std;
 // clang-format off
 /* accelration */
 // 高速バイナリ生成
-#pragma GCC target("avx")
+// #pragma GCC target("avx")
 #pragma GCC optimize("O3")
 #pragma GCC optimize("unroll-loops")
 // cin cout の結びつけ解除, stdioと同期しない(入出力非同期化)
@@ -29,6 +29,8 @@ using vvl = vector<vl>;
 using vvll = vector<vll>;
 using vs = vector<string>;
 using pii = pair<int, int>;
+
+using sts = set<string>;
 
 /* define short */
 #define pb push_back

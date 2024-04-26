@@ -13,3 +13,8 @@
 #project based
 .zsh_history
 .zprezto
+.bash_history
+.zcompcache
+.zcompdump
+.viminfo
+.emacs.d/history
